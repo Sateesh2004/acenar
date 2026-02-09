@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { usePathname } from "next/navigation";
-import logo from '../../public/logo.png'
+import logo from '../../public/logo2 (1).png'
 import { 
   Menu, X, Phone, Mail, MapPin, ChevronRight, 
   Zap, Car, Cpu, Activity, Home, Globe, ShieldCheck, 
