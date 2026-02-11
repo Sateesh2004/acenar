@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Acenar Global",
-  description: "ACENAR GLOBAL is an ISO-certified manufacturer specializing in custom wire harness and cable assembly solutions. We provide high-quality wiring for automotive, solar systems, telecommunications, and home appliances with a focus on precision and durability.",
+  description: "ACENAR GLOBAL is an ISO-certified manufacturer specializing in custom wire harness and cable assembly solutions. We provide high-quality wiring for automotive, solar systems, telecommunications, and home appliances focusing on precision and durability.",
   icons: {
     icon: "/logo2 (1).png",
   },
