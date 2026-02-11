@@ -25,7 +25,7 @@ const Hero = () => {
               <div className="flex flex-wrap gap-4">
                 <Link 
                   href="/"
-                  className="bg-[#002147] text-white px-10 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-[#CCFF00] hover:text-[#002147] transition-all flex items-center shadow-2xl shadow-[#002147]/20"
+                  className="bg-[#002147] text-white px-10 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-[#dea764] hover:text-[#002147] transition-all flex items-center shadow-2xl shadow-[#002147]/20"
                 >
                   Our Solutions <ChevronRight size={16} className="ml-2" />
                 </Link>
@@ -47,7 +47,7 @@ const Hero = () => {
                 />
                 <div className="absolute inset-0 bg-[#002147]/10 group-hover:bg-transparent transition-colors"></div>
               </div>
-              <div className="absolute -bottom-10 -right-10 bg-[#CCFF00] p-10 rounded-3xl shadow-2xl hidden md:block animate-bounce-slow">
+              <div className="absolute -bottom-10 -right-10 bg-[#dea764] p-10 rounded-3xl shadow-2xl hidden md:block animate-bounce-slow">
                  <ShieldCheck size={48} className="text-[#002147] mb-4" />
                  <p className="text-[#002147] font-black uppercase text-xs tracking-widest leading-none">ISO 9001:2015</p>
                  <p className="text-[#002147]/70 font-bold text-[10px] mt-1 italic">Certified Quality</p>

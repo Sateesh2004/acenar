@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { usePathname } from "next/navigation";
 import logo from '../../public/logo2 (1).png'
+// import Link from 'next/link';
 import { 
   Menu, X, Phone, Mail, MapPin, ChevronRight, 
   Zap, Car, Cpu, Activity, Home, Globe, ShieldCheck, 
@@ -11,15 +12,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 const COLORS = {
   navy: 'bg-[#002147]',
-  lime: 'text-[#CCFF00]',
-  limeBg: 'bg-[#CCFF00]',
-  limeBorder: 'border-[#CCFF00]',
+  lime: 'text-[#dea764]',
+  limeBg: 'bg-[#dea764]',
+  limeBorder: 'border-[#dea764]',
 };
 const NavBar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+      const [isOpen, setIsOpen] = useState(false);
       const [scrolled, setScrolled] = useState(false);
       const pathname = usePathname();
-const isHome = pathname === "/";
+      const isHome = pathname === "/";
     
       useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -40,18 +41,20 @@ const isHome = pathname === "/";
               <Link href="/" className="flex items-center group cursor-pointer">
                 {/* <div className="flex flex-col">
                   <span className={`text-2xl font-black tracking-tighter transition-colors ${scrolled ? 'text-white' : 'text-[#002147]'}`}>
-                    ACENAR <span className="text-[#CCFF00]">GLOBAL</span>
+                    ACENAR <span className="text-[#dea764]">GLOBAL</span>
                   </span>
                   <div className="flex items-center space-x-1">
-                    <div className="h-[2px] w-4 bg-[#CCFF00]"></div>
+                    <div className="h-[2px] w-4 bg-[#dea764]"></div>
                     <span className={`text-[9px] uppercase tracking-[0.3em] font-bold ${scrolled ? 'text-slate-300' : 'text-slate-500'}`}>We connect as wave</span>
                   </div>
                 </div> */}
                 <Image
       
-                className='border-4 h-20 w-58 '
+                className='scale-110'
                 src={logo}
                 alt="Picture of the author"
+                priority
+                width={180}
     />
     
               </Link>
@@ -64,21 +67,21 @@ const isHome = pathname === "/";
   className={`text-xs uppercase tracking-widest font-bold transition-all 
   ${
     scrolled
-      ? 'text-white hover:text-[#CCFF00]'
+      ? 'text-white hover:text-[#dea764]'
       : isHome && ["Solutions", "Contact"].includes(item.name)
-        ? 'text-[#CCFF00]'
+        ? 'text-[#dea764]'
         : 'text-[#002147]'
   }`}
 >
   {item.name}
 </Link>
                 ))}
-                <a 
-                  href="#contact"
-                  className={`${COLORS.limeBg} text-[#002147] px-6 py-2 rounded-full text-xs font-black uppercase tracking-wider hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-[#CCFF00]/20`}
+                <Link 
+                  href="/contact"
+                  className={`${COLORS.limeBg} text-[#002147] px-6 py-2 rounded-full text-xs font-black uppercase tracking-wider hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-[#dea764]/20`}
                 >
                   Get a Quote
-                </a>
+                </Link>
               </div>
     
               <div className="md:hidden">
@@ -93,22 +96,22 @@ const isHome = pathname === "/";
           {isOpen && (
             <div className="md:hidden bg-[#002147] absolute w-full left-0 p-8 space-y-6 shadow-2xl animate-in slide-in-from-top duration-300">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
                   className="block w-full text-left text-white text-xl font-bold border-b border-white/10 pb-4"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
-              <a 
-                href="#contact"
+              <Link 
+                href="/contact"
                 onClick={() => setIsOpen(false)}
-                className="block text-[#CCFF00] text-xl font-bold"
+                className="block text-[#dea764] text-xl font-bold"
               >
                 Get a Quote
-              </a>
+              </Link>
             </div>
           )}
         </nav>

@@ -11,7 +11,7 @@ const page = () => {
              <div className="max-w-7xl mx-auto">
                <div className="grid lg:grid-cols-12 gap-20 mb-32">
                  <div className="lg:col-span-7">
-                   <h4 className="text-[#CCFF00] font-black uppercase text-xs tracking-[0.3em] mb-6">Our Legacy</h4>
+                   <h4 className="text-[#dea764] font-black uppercase text-xs tracking-[0.3em] mb-6">Our Legacy</h4>
                    <h2 className="text-5xl md:text-7xl font-black text-[#002147] leading-tight mb-10">Specializing in Precision Harnesses.</h2>
                    <div className="space-y-8 text-xl text-slate-500 font-medium leading-relaxed">
                      <p>
@@ -28,11 +28,11 @@ const page = () => {
                    </div>
                    <div>
                      <h3 className="text-4xl font-black mb-4">60+</h3>
-                     <p className="text-[#CCFF00] font-bold uppercase tracking-widest text-xs">Skilled Workforce</p>
+                     <p className="text-[#dea764] font-bold uppercase tracking-widest text-xs">Skilled Workforce</p>
                    </div>
                    <div className="mt-20">
                      <p className="text-slate-300 text-sm italic mb-6">"Commitment to precision, durability, and performance designed to meet regulatory standards."</p>
-                     <div className="h-1 w-20 bg-[#CCFF00]"></div>
+                     <div className="h-1 w-20 bg-[#dea764]"></div>
                    </div>
                  </div>
                </div>
@@ -48,14 +48,14 @@ const page = () => {
                      { year: '2026+', label: 'Maturity', tasks: 'Global expansion & IPO Prep' }
                    ].map((step, idx) => (
                      <div key={idx} className="relative group">
-                       <div className="text-6xl font-black text-[#002147]/5 absolute -top-8 -left-4 transition-all group-hover:text-[#CCFF00]/20">{step.year}</div>
-                       <div className="relative bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-[#CCFF00] transition-colors">
-                         <span className="text-[10px] font-black uppercase tracking-widest text-[#CCFF00] mb-4 block">{step.year}</span>
+                       <div className="text-6xl font-black text-[#002147]/5 absolute -top-8 -left-4 transition-all group-hover:text-[#dea764]/20">{step.year}</div>
+                       <div className="relative bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-[#dea764] transition-colors">
+                         <span className="text-[10px] font-black uppercase tracking-widest text-[#dea764] mb-4 block">{step.year}</span>
                          <h4 className="text-xl font-black text-[#002147] mb-6">{step.label}</h4>
                          <div className="space-y-3">
                             {(step.details || [step.tasks]).map((d, i) => (
                               <div key={i} className="flex items-center space-x-2 text-xs text-slate-500 font-bold">
-                                <CheckCircle2 size={12} className="text-[#CCFF00]" />
+                                <CheckCircle2 size={12} className="text-[#dea764]" />
                                 <span>{d}</span>
                               </div>
                             ))}
