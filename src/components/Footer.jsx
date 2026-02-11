@@ -28,7 +28,7 @@ import Image from "next/image";
 const socials = [
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/company/acenar-global/",
+    href: "https://www.linkedin.com/company/acenar-global",
     icon: linkedin,
   },
   {
@@ -43,7 +43,7 @@ const Footer = () => {
       <div className="absolute top-0 left-0 w-full opacity-5 pointer-events-none">
         <svg viewBox="0 0 1440 320" className="w-full h-auto">
           <path
-            fill="#dea764"
+            fill="#CCFF00"
             d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,165.3C672,139,768,117,864,128C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
@@ -67,7 +67,7 @@ const Footer = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#dea764] hover:text-[#002147] transition-all"
+                className="w-10 h-10 border bg-white border-white/20 rounded-full flex items-center justify-center transition-all"
               >
                 <Image src={Icon} alt={`${name} icon`} className="w-5 h-5" />
               </Link>
